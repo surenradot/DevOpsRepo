@@ -1,0 +1,397 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <link rel="icon" href="http://192.168.5.42:8088/favicon.ico" type="image/ico">
+    <title>PeoplePro  Index</title>
+
+    <link href="/bundles/newcommoncss?v=cwnDp3k11UjVh3hOvc7l0cUOskOoLHg80GkVOLS-bcs1" rel="stylesheet"/>
+
+    <script src="/bundles/jquery?v=v76fAns59-4kGkYyDyEXyw9RgnmvJyXSd0eFBt05RzE1"></script>
+
+
+    
+</head>
+
+
+<body>
+
+    <div class="loading-wrap" id="loadingElement" style="display:none;">
+        <div class="uil-ripple-css loading-cls" style="transform:scale(0.36);">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="hdr-inr dis-block clearfix">
+            <div class="div-block-5 clearfix">
+                <div class="srch-block" style="display:none;">
+                    <input type="text" placeholder="Search..." class="form-control">
+                </div>
+            </div>
+            <a href="/Company/Dashboard" class="logo-block"> <img src="/Areas/Company/Content/images/new-logo.png" alt=""> </a>
+            <div class="menu-outer">
+                <div class="time-and-date">
+
+                    <h3 class="time">05:08</h3>
+                    <h5 class="date">Wednesday 22 January 2020</h5>
+                </div>
+                <div class="leave-request-block">
+                    <a class="new-leave" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#modal-leaverequest-add-edit" href="/Company/ManageLeaveRequest/LeaveRequest">New Leave Request</a>
+                </div>
+                <a class="nav-icon" href="javascript:void(0);"><img class="image" src="/Areas/Company/Content/images/menu-icon.png" alt=""></a>
+                <a href="javascript:void(0);" class="notif-btn">2</a>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="menu-inr dis-block clearfix">
+                <ul class="dis-block clearfix">
+                        <li>
+                            <ul>
+                                <li class="nav-hd"><img src="/Areas/Company/Content/images/icon-white-settings-general.svg" alt=""> General Setup</li>
+                                    <li class=""><a href="/Company/ManageTag">Tags/Groups</a></li>
+                                    <li class=""><a href="/Company/ManageRestrictedDays">Free/Restricted Days</a></li>
+                                    <li class=""><a href="/Company/CompanyAlert">Company Alert</a></li>
+                                    <li><a href="/Company/DocumentCategory">Document Category</a></li>
+                                    <li><a href="/Company/MedicalCategory">Medical Category</a></li>
+                                    <li><a href="/Company/CostCenter">Cost Center</a></li>
+                                    <li><a href="/Company/notetype">Note Type</a></li>
+                                    <li><a href="/Company/LocationGroup">Location Group</a></li>
+                                <li><a href="/Company/Location">Locations</a></li>
+                                <li><a href="/Company/ManageDepartment">Departments</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul>
+                                <li class="nav-hd"><img src="/Areas/Company/Content/images/icon-white-settings-company-setup.svg" alt=""> Company Setup</li>
+                                    <li class=""> <a href="/Company/ManageCompany"> <span>Companies</span> </a> </li>
+                                <li><a href="http://192.168.5.42:8088/Company/ManageCompany/AddEdit?id=y3Avug0EKbs=">Company Detail</a></li>
+                                <li><a href="/Company/ManageCompany">Registered Companies</a></li>
+                                <li><a href="/Company/ManageCompany/AddEdit">Add New Company</a></li>
+                                    <li><a href="/Company/RecruitmentMethod">HR Recruitment Method</a></li>
+                            </ul>
+                        </li>
+                    <li>
+                            <ul>
+                                <li class="nav-hd"><img src="/Areas/Company/Content/images/icon-white-manage-staff.svg" alt=""> Staff Setup / Leave</li>
+                                <li><a href="/Company/ManageStaff/AddEdit">Add/Staff Member</a></li>
+                                <li><a href="/Company/ManageStaff">Manage Staff</a></li>
+                                <li><a href="/Company/StaffBulkUpload">Bulk Import Staff</a></li>
+                                    <li><a href="/Company/ManageCompanyLeaveType">Leave Type</a></li>
+                                    <li><a href="/Company/OvertimeType">Overtime Type</a></li>
+                            </ul>
+                        <ul>
+                            <li class="nav-hd"><img src="/Areas/Company/Content/images/user-account.png" alt=""> User Account</li>
+                            <li><a href="/Company/Login/ChangePassword">Change Password</a></li>
+                        </ul>
+                    </li>
+                        <li>
+                            <ul>
+                                <li class="nav-hd"><img src="/Areas/Company/Content/images/icon-white-settings-finance.svg" alt=""> Finance</li>
+                                <li><a href="/Company/Payment">Payments</a></li>
+                                <li><a href="/Company/Payment/History">Payment History</a></li>
+                            </ul>
+                                <ul>
+                                    <li class="nav-hd"><img src="/Areas/Company/Content/images/manage-media.svg" alt=""> Media</li>
+                                    <li><a href="/Company/Media">Manage Media</a></li>
+                                    <li><a href="/Company/MediaAnswer">Manage Answers</a></li>
+                                    <li><a href="/Company/Api">API</a></li>
+                                </ul>
+                        </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mobile-btn clearfix">
+            <a title="Menu" class="menu-btn" href="javascript:void(0);"><img src="/Areas/Company/Content/images/mobile-btn.png" alt=""><span>MENU</span></a>
+            <a title="Today's Notifications" class="notification-btn" href="javascript:void(0);">Today's Notifications</a>
+        </div>
+
+    </div>
+
+    <div class="container-part full-wdth clearfix">
+        <div class="left-panel">
+            <div class="left-nav">
+                <div class="user-profile-block">
+                    <div class="profile-pic">
+                            <img src="/Areas/Company/UploadedFiles/ProfileImage/f4ce_Screenshot20191104DSPWhenyourOffcoukcom.png" alt="">
+                    </div>
+                    <div class="name-block">
+                        <h4>Chris</h4>
+                    </div>
+                </div>
+                <span class="menu-hd">Menu</span>
+                <ul>
+                    <li class="active"> <a title="Dashboard" href="/Company/Dashboard"><i class="fas fa-th-large"></i> <span>Dashboard</span> </a> </li>
+                        <li class=""> <a href="/Company/ManageStaff" title="Manage Staff"><i class="fas fa-user-check"></i> <span>Manage Staff</span> </a> </li>
+                        <li class=""> <a href="/Company/ManageLeaveRequest" title="Leave Requests"><i class="fas fa-user-clock"></i> <span>Leave Requests</span> </a> </li>
+                            <li class=""> <a href="/Company/ManageOvertimeRequest" title="Overtime Requests"><i class="fas fa-user-plus"></i> <span>Overtime Requests</span> </a> </li>
+                    <li class=""> <a href="/Company/StaffWorkingSchedule" title="Calendar"><i class="fas fa-calendar-alt"></i> <span>Calendar</span> </a> </li>
+                    
+                    <li class="">
+                        <a href="/Company/CompanyDocument" title="Company Documents"><i class="fas fa-edit"></i> <span>Company Documents</span> </a>
+                    </li>
+                        <li class=""> <a href="/Company/TimeSheet" title="Time Sheet"><i class="fas fa-file-alt"></i> <span>Time Sheet</span> </a> </li>
+
+                        <li class=""> <a href="/Company/ShiftManager" title="T&A Calender"><i class="fas fa-history"></i> <span>T&A Calender</span> </a> </li>
+                            <li class="sub-nav pointer" id="administration">
+                                <a title="Time & Attendance"><i class="fas fa-address-card"></i> <span>Time &amp; Attendance</span></a>
+                                <ul class="sub-nav-list hide">
+                                    <li class=""><a href="/Company/TAHourType" title="Hour Type"><i class="fas fa-clock"></i> <span>Hour Type</span></a></li>
+                                    <li class=""><a href="/Company/TAShift" title="Shift"><i class="fas fa-venus-mars"></i> <span>Shift</span></a></li>
+                                    <li class=""><a href="/Company/TAShiftGroup" title="Staff Group"><i class="fas fa-venus-mars"></i> <span>Staff Group</span></a></li>
+                                    <li class=""><a href="/Company/TAShiftJob" title="Shift Job"><i class="fas fa-venus-mars"></i> <span>Shift Job</span></a></li>
+                                    <li class=""><a href="/Company/TAShiftRule" title="Shift Rule"><i class="fas fa-venus-mars"></i> <span>Shift Rule</span></a></li>
+                                    <li class=""><a href="/Company/TAOverrideRules" title="Override Rule"><i class="fas fa-scroll"></i> <span>Override Rule</span></a></li>
+
+                                    <li class=""><a href="/Company/TAShiftPattern" title="Shift Pattern"><i class="fas fa-venus-mars"></i> <span>Shift Pattern</span></a></li>
+                                    
+                                </ul>
+                            </li>
+
+                        <li class="sub-nav pointer" id="timetaadmin">
+                            <a title="Reports"><i class="fas fa-chart-bar"></i> <span>Reports</span></a>
+                            <ul class="sub-nav-list hide">
+                                
+                                <li class=""> <a href="/Company/Reports/StaffReport" title="Staff Report"><i class="fas fa-file-alt"></i> <span>Staff Report</span> </a> </li>
+                                <li class=""> <a href="/Company/Reports/LeaveReports" title="Leave Report"><i class="fas fa-file-alt"></i> <span>Leave Report</span> </a> </li>
+                                <li class=""> <a href="/Company/Reports/GetYearlyLeaveReports" title="Breakdown Report"><i class="fas fa-file-alt"></i> <span>Breakdown Report</span> </a> </li>
+                                <li class=""> <a href="/Company/Reports/CalendarReport" title="Yearly Calendar"><i class="fas fa-calendar-alt"></i> <span>Yearly Calendar</span> </a> </li>
+                                <li class=""> <a href="/Company/Reports/OvertimeReports" title="Overtime Report"><i class="fas fa-file-alt"></i> <span>Overtime Report</span> </a> </li>
+                                <li class=""> <a href="/Company/Reports/LocationReport1" title="Location Report"><i class="fas fa-file-alt"></i>  <span>Location Report</span> </a> </li>
+                                <li class=""> <a href="/Company/Reports/SummaryReport" title="Summary Report"><i class="fas fa-file-alt"></i>  <span>Summary Report</span> </a> </li>
+                                <li class=""> <a href="/Company/Reports/SummaryReport2" title="Summary Report2"><i class="fas fa-file-alt"></i>  <span>Summary Report2</span> </a> </li>
+                                <li class=""> <a href="/Company/Reports/SummaryReport3" title="Summary Report3"><i class="fas fa-file-alt"></i>  <span>Summary Report3</span> </a> </li>
+                                <li class=""> <a href="/Company/Reports/SummaryReport4" title="Summary Report4"><i class="fas fa-file-alt"></i>  <span>Summary Report4</span> </a> </li>
+                                <li class=""> <a href="/Company/Reports/BiopanelClockReport" title="Biopanel Clock Report"><i class="fas fa-file-alt"></i>  <span>Biopanel Clock Report</span> </a> </li>
+                                <li class=""> <a href="/Company/Reports/PayrollExport1Report" title="Payroll Export 1 Report"><i class="fas fa-file-alt"></i>  <span>Payroll Export 1 Report</span> </a> </li>
+                            </ul>
+                        </li>
+                    <li> <a href="/Company/Logout/Signout" title="Logout"><i class="fas fa-power-off"></i> <span>Logout</span> </a> </li>
+                    <li>
+                        <a onclick="topFunction()" href="javascript:void(0);" title="Go to top" id="goToTop" style="display:none;">
+                            <i class="fas fa-angle-up"></i> <span>Go To Top</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <a href="javascript:void(0);" class="expand-left-panel"> <img src="/Areas/Company/Content/images/menu-icon.png" alt=""> </a>
+        </div>
+            <div class="main-panel"> 
+<div class="top-hd-block">
+     <h1>Dashboard</h1>
+    </div>
+<div class="leave-days-box-outer mrg-b30 cmn-white-box full-wdth clearfix">
+<div class="full-wdth clearfix text-center">
+    
+
+
+    <div class="label-warning warn-block">
+                        <span>Your Subscription ends on 22/08/2020</span>
+             
+                <a class="paymentbtn btn btn-custom white-btn" href="/Company/Payment">Submit Payment Details</a>
+				</div>
+</div>
+        <div class="leave-days-box-left">
+            <h1 class="heading">Holiday Stats</h1>
+            <div class="graph">
+                <img class="full-svg" src="/Areas/Company/Content/images/pie-chart1.png" alt="">
+                <div class="big-number" style=>1</div>
+                <div class="small-number">20</div>
+                <img class="dial-divide" src="/Areas/Company/Content/images/dial-divide.svg" alt="">
+            </div>
+            <p>You have 19  days left of your 20  days holiday</p>
+        </div>
+        <div class="leave-days-box-right">
+            <div class="top-number-box pad-t20 mrg-t25 dis-block clearfix">
+                <div class="round-loop">
+                    <div class="round-box dis-block clearfix mrg-b10">
+                        <img class="full-svg" src="/Areas/Company/Content/images/circle-yellow.svg" alt="">
+                        <span class="medium-number">0</span>
+                    </div>
+                    <p class="small-text">request pending</p>
+                </div>
+                <div class="round-loop">
+                    <div class="round-box dis-block clearfix mrg-b10">
+                        <img class="full-svg" src="/Areas/Company/Content/images/circle-orange.svg" alt="">
+                        <span class="medium-number">0</span>
+                    </div>
+                    <p class="small-text">days in lieu</p>
+                </div>
+                <div class="round-loop">
+                    <div class="round-box dis-block clearfix mrg-b10">
+                        <img class="full-svg" src="/Areas/Company/Content/images/circle-blue.png" alt="">
+                        <span class="medium-number">19 D</span>
+                    </div>
+                    <p class="small-text">next year entitlement</p>
+                </div>
+                <div class="round-loop extended">
+                    <a data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#modal-leaverequest-add-edit" href="/Company/ManageLeaveRequest/LeaveRequest" class="round-box dis-block clearfix mrg-b10 LeaveBtn">
+                        <img class="full-svg" src="/Areas/Company/Content/images/capsule-blue.png" alt="">
+                        <span class="medium-number big-white-plus">+</span>
+                    </a>
+                    <p class="small-text">New Leave Request</p>
+                </div>
+            </div>
+
+                <div class="btm-day-box text-center mrg-t10 dis-block clearfix">
+                    <h4 class="heading">My Next 7 Days</h4>
+                        <div class="days">
+                            <div class="days-date greyed-out">
+                                <h4 class="day-title">Thu</h4>
+                                <div class="font15">23 Jan</div>
+                            </div>
+                            <div class="days-indicator">
+                                    <img src="/Areas/Company/Content/images/icon-col-cross.svg" alt="">
+                                    <div class="small-details">Sick </div>
+                            </div>
+                        </div>
+                        <div class="days">
+                            <div class="days-date greyed-out">
+                                <h4 class="day-title">Fri</h4>
+                                <div class="font15">24 Jan</div>
+                            </div>
+                            <div class="days-indicator">
+                                    <img src="/Areas/Company/Content/images/icon-col-cross.svg" alt="">
+                                    <div class="small-details">Sick </div>
+                            </div>
+                        </div>
+                        <div class="days">
+                            <div class="days-date greyed-out">
+                                <h4 class="day-title">Sat</h4>
+                                <div class="font15">25 Jan</div>
+                            </div>
+                            <div class="days-indicator">
+                                    <img src="/Areas/Company/Content/images/icon-col-cross.svg" alt="">
+                                    <div class="small-details">Non Working Day </div>
+                            </div>
+                        </div>
+                        <div class="days">
+                            <div class="days-date greyed-out">
+                                <h4 class="day-title">Sun</h4>
+                                <div class="font15">26 Jan</div>
+                            </div>
+                            <div class="days-indicator">
+                                    <img src="/Areas/Company/Content/images/icon-col-cross.svg" alt="">
+                                    <div class="small-details">Non Working Day </div>
+                            </div>
+                        </div>
+                        <div class="days">
+                            <div class="days-date ">
+                                <h4 class="day-title">Mon</h4>
+                                <div class="font15">27 Jan</div>
+                            </div>
+                            <div class="days-indicator">
+                                    <img src="/Areas/Company/Content/images/icon-col-tick.png" alt="">
+                                    <div class="small-details">Working Day</div>
+                            </div>
+                        </div>
+                        <div class="days">
+                            <div class="days-date ">
+                                <h4 class="day-title">Tue</h4>
+                                <div class="font15">28 Jan</div>
+                            </div>
+                            <div class="days-indicator">
+                                    <img src="/Areas/Company/Content/images/icon-col-tick.png" alt="">
+                                    <div class="small-details">Working Day</div>
+                            </div>
+                        </div>
+                        <div class="days">
+                            <div class="days-date ">
+                                <h4 class="day-title">Wed</h4>
+                                <div class="font15">29 Jan</div>
+                            </div>
+                            <div class="days-indicator">
+                                    <img src="/Areas/Company/Content/images/icon-col-tick.png" alt="">
+                                    <div class="small-details">Working Day</div>
+                            </div>
+                        </div>
+                </div>
+        </div>
+</div>
+<div aria-hidden="true" aria-labelledby="modal-event-response-label" role="dialog" tabindex="-1" id="modal-event-response" class="modal fade custom-popup1">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">            
+                <div class="loading-wrap">
+                    <div class="uil-ripple-css loading-cls" style="transform:scale(0.36);"><div></div><div></div></div>
+                </div>           
+        </div>
+    </div>
+</div>
+<script>
+    var domain = 'http://192.168.5.42:8088/';
+</script>
+ </div>
+<div class="right-panel">
+    <div class="right-panel-inr">
+        <div class="notification-title">Notifications</div>
+        <div class="notification-loop-box dis-block clearfix">
+            <div class="notification-category">Absent Staff <span>(2)</span></div>
+            <ul>
+                    <li>
+                        <div class="small-title font15">Nakul Dot</div>
+                        <div class="small-details">Staff Shop<br>Returns 24th Fri 20</div>
+                    </li>
+                    <li>
+                        <div class="small-title font15">Chris Totten</div>
+                        <div class="small-details">Unassigned Department<br>Returns 24th Fri 20</div>
+                    </li>
+            </ul>
+        </div>
+        <div class="notification-category">New Messages <span>(0)</span></div>
+        <ul>
+        </ul>
+    </div>
+    <a class="expand-right-panel" href="javascript:void(0);">
+        <img src="/Areas/Company/Content/images/expand-vertical-icon.svg" alt="">
+    </a>
+</div>    </div>
+    <div aria-hidden="true" aria-labelledby="modal-leaverequest-add-edit-label" role="dialog" tabindex="-1" id="modal-leaverequest-add-edit" class="modal fade custom-popup1">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">            
+                <div class="loading-wrap">
+                    <div class="uil-ripple-css loading-cls" style="transform:scale(0.36);"><div></div><div></div></div>
+                </div>           
+        </div>
+    </div>
+</div>
+
+    <!-- ./wrapper -->
+    <script src="/bundles/modernizr?v=wBEWDufH_8Md-Pbioxomt90vm6tJN2Pyy9u9zHtWsPo1"></script>
+
+    <script src="/bundles/jqueryval?v=24T9feMr6tWcZXs9YNwvaYDJK_74wu4FH-Iur_Y_DHs1"></script>
+
+    <script src="/bundles/newcommonjs?v=bSu3LC9TciABW_Hdi6H2s4NTsr13aheySU_78HjFTkQ1"></script>
+
+
+    
+    <script src="/Areas/Company/Scripts/CustomJS/dashboard.js"></script>
+
+
+    <script>
+
+        var domain = 'http://192.168.5.42:8088/';
+        var displayDateFormat = 'dd/MM/yyyy';
+        var appDateFormat = 'dd/MM/yyyy';
+
+        $(window).scroll(function () {
+            var currentScroll = $(this).scrollTop();
+            if (currentScroll > 0) {
+                $('.ps-fixed').css('top', '2px');
+
+            } else {
+                if ($('.hdr-inr').scrollTop() == 0) {
+                    $('.ps-fixed').css('top', '');
+                }
+            }
+
+        });       
+    </script>
+</body>
+</html>
