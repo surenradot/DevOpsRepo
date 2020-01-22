@@ -1,3 +1,7 @@
 I have added some text in this file
 
+<<<<<<< HEAD
 this is by dev1
+=======
+this is by devrepo
+>>>>>>> b968dc6b1306b4bfaaa204ba6a8e9080645ce9dc
